@@ -36,7 +36,7 @@ font-family: 'Inter', sans-serif;
   }
 
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer /* hover:border-b-2 transition ease-in-out delay-1000; */
   }
 
   /* button {
