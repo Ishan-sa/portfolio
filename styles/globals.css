@@ -16,6 +16,7 @@ font-family: 'Inter', sans-serif;
 @layer base {
   body {
     @apply bg-[#292D39] text-[#f7f7f7] tracking-wide;
+    @apply box-border
   }
 
   h1,
@@ -45,5 +46,44 @@ font-family: 'Inter', sans-serif;
 
   button{
     @apply bg-[#68A4FF] px-4 py-2 rounded-[12px]
+  }
+}
+
+/* .aboutMe{
+  border-bottom: 2px solid red;
+}
+.aboutMe::after{
+  border-bottom: 2px solid rgb(148, 47, 47);
+} */
+
+.aboutCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100vw;
+  padding: 0px 40px 0px 40px;
+}
+
+.contentAbout{
+  width: 70vw;
+}
+
+.imageAbout{
+  height: 30vh;
+  color: #f6ff00;
+}
+
+@media only screen and (max-width: 768px){
+  .aboutCont{
+    flex-direction: column;
+    padding: 0px;
+    gap: 5px;
+  }
+  .contentAbout{
+    width: 100vw;
+  }
+  .imageAbout{
+    width: 100vw;
   }
 }

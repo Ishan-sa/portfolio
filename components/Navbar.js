@@ -20,6 +20,11 @@ export const Navbar = () => {
         setNav(!nav);
     }
 
+    // const fadeOverlay = this.root.querySelector('.overlay');
+    // function overlayClickHandler() {
+    //     fadeOverlay.style.cssText = `pointer-events: none;`
+    // }
+
     return (
         <div className='fixed w-full h-20 shadow-xl z-[100]'>
             <div className='flex justify-between items-center w-full h-full px-2  2xl:px-16'>
@@ -45,22 +50,22 @@ export const Navbar = () => {
                             Let's talk
                         </ContactBtn>
                     </ul>
-                    <div onClick={handleNav} className="md:hidden">
+                    <div onClick={handleNav} className="pr-1 md:hidden cursor-pointer">
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>
             </div>
 
             {/* bg overlay */}
-            <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/20' : ''}>
+            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70)' : ''}>
                 <div className={nav
                     ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#292D39] p-10 ease-in duration-500'
                     : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                 }>
                     <div>
-                        <div className="flex w-full items-center justify-between">
+                        <div className="flex w-full items-center justify-between logoAndClose">
                             <Image src='/logo.svg' alt='/' width='230' height='30' />
-                            <div onClick={handleNav} className="rounded-[50%] shadow-lg shadow-[#3d4356] p-3 cursor-pointer">
+                            <div onClick={handleNav} className="rounded-[50%] shadow-lg shadow-[#3d4356] p-3 cursor-pointer closeCont">
                                 <AiOutlineClose />
                             </div>
                         </div>
@@ -113,7 +118,6 @@ export const Navbar = () => {
                     </div>
                 </div>
             </div>
-
         </div >
     )
 }
