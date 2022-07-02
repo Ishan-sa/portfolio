@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navbar } from '../components/Navbar';
-import { First } from '../components/Intro';
-import { About } from '../components/About';
+import { Navbar } from '../components/Navbar.jsx';
+import { First } from '../components/Intro.jsx';
+import { About } from '../components/About.jsx';
+import { Skills } from '../components/Skills.jsx';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <First />
       <About />
+      <Skills />
     </div>
   )
 }
