@@ -26,7 +26,7 @@ export const Navbar = () => {
     // }
 
     return (
-        <div className='fixed w-full h-20 shadow-xl z-[100]'>
+        <div className='fixed w-full h-20 shadow-xl z-[100] z-999 bg-mainbg'>
             <div className='flex justify-between items-center w-full h-full px-2  2xl:px-16'>
                 <Image src="/logo.svg" alt="/" width='245' height='30' className="logo" />
                 <div className="items-center">

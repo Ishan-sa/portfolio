@@ -30,7 +30,7 @@ export const About = () => {
         //     </div>
         // </div>
 
-        <div className="aboutCont w-full h-screen">
+        <div className="aboutCont w-full h-screen max-w-[1240px]">
             <div className="contentAbout">
                 <p className="font-SourceCodePro text-2xl uppercase tracking-widest text-mainblue pb-5">About</p>
                 <div>
