@@ -1,13 +1,9 @@
-import { AiOutlineMail } from "react-icons/ai"
-import { BsArrowDownCircle, BsFillPersonLinesFill } from "react-icons/bs"
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
-import Router, { useRouter } from "next/router"
-import Image from "next/image"
+import { BsArrowDownCircle } from "react-icons/bs"
+import { useRouter } from "next/router"
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react"
 import { SocialIcons } from "./SocialIcons"
-import { About } from "./About"
 
 export const First = () => {
     const r = useRouter();
@@ -21,17 +17,17 @@ export const First = () => {
                     <p data-aos='fade-up' className="uppercase text-sm tracking-widest text-active leading-10 font-Inter">
                         Let's build something together
                     </p>
-                    <h1 data-aos='fade-down' className="py-2 font-Inter">
+                    <h1 data-aos='fade-down' className="py-2 font-Inter font-semibold">
                         Hi, I'm <span className="text-mainblue">Ishan.</span>
                     </h1>
                     <div className="flex items-center">
                         <img src="/imac.svg" alt="" />
-                        <h1 className="py-2 font-Inter m-auto">
+                        <h1 className="py-2 font-Inter m-auto font-semibold">
                             A Front End Web <span className="text-mainblue">Developer.</span>
                         </h1>
                         <img src="/rocket.svg" alt="" />
                     </div>
-                    <h2 className="py-2">and, a UI/UX <span className="text-mainblue font-Inter">Designer.</span></h2>
+                    <h2 className="py-2 font-semibold">and, a UI/UX <span className="text-mainblue font-Inter">Designer.</span></h2>
                     <p className="text-notactive py-4 max-w-[70%] m-auto font-Inter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, adipisci hic ad error id cumque quo repudiandae voluptatem distinctio porro ut inventore exercitationem architecto officia quas necessitatibus. Reprehenderit, recusandae tenetur!</p>
 
                     {/* social icons start */}

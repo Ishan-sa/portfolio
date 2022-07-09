@@ -42,7 +42,7 @@ export const DevCards = () => {
                         <Image src='/react.svg' width={45} height={45} />
                     </div>
                     <div className='flex flex-col items-center justify-center text-xl'>
-                        <h3>React</h3>
+                        <h3>ReactJS</h3>
                     </div>
                 </div>
             </div>
