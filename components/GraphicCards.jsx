@@ -1,9 +1,15 @@
-import Image from "next/image"
+import Image from "next/image";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 export const GraphicCards = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
     return (
-        <div className='grid grid-cols-2 lg:grid-cols-3 gap-8 font-Inter text-center text-xl'>
+        <div data-aos='fade-right' className='grid grid-cols-2 lg:grid-cols-3 gap-8 font-Inter text-center text-xl'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-cardsbg'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>

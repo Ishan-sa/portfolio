@@ -7,14 +7,22 @@ import 'aos/dist/aos.css';
 export const Skills = () => {
     const [showGraphic, setshowGraphic] = useState(false);
     const [showDev, setshowDev] = useState(true);
+    const colorRefGraphic = useRef(null);
+    const colorRefDev = useRef(null);
 
-    const colorRef = useRef(null);
-    // useEffect(() => {
-    //     colorRef.onClick = () => {
-    //         this.style.backgroundColor = '#dad';
-    //     }
-    //     console.log(colorRef);
-    // }, [colorRef]);
+    const changeGraphicColor = () => {
+        colorRefGraphic.current.classList.remove('text-notactive');
+        colorRefGraphic.current.classList.add('text-active');
+        colorRefDev.current.classList.remove('text-active');
+        colorRefDev.current.classList.add('text-notactive');
+    }
+
+    const changeDevColor = () => {
+        colorRefDev.current.classList.remove('text-notactive');
+        colorRefDev.current.classList.add('text-active');
+        colorRefGraphic.current.classList.remove('text-active');
+        colorRefGraphic.current.classList.add('text-notactive');
+    }
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
@@ -30,13 +38,14 @@ export const Skills = () => {
                 </div>
                 <div className='flex gap-2 align-center pb-6'>
                     <p
-                        onClick={() => [setshowDev(true), setshowGraphic(false)]}
-                        className='text-active development cursor-pointer'>Development</p>
+                        ref={colorRefDev}
+                        onClick={() => [setshowDev(true), setshowGraphic(false), changeDevColor()]}
+                        className='text-active development cursor-pointer transition duration-900'>Development</p>
                     <p className='text-mainwhite'>/</p>
                     <p
-                        ref={colorRef}
-                        onClick={() => [setshowGraphic(true), setshowDev(false)]}
-                        className='text-notactive graphic cursor-pointer'>
+                        ref={colorRefGraphic}
+                        onClick={() => [setshowGraphic(!false), setshowDev(false), changeGraphicColor()]}
+                        className='text-notactive graphic cursor-pointer transition duration-900'>
                         Graphic and UI/UX
                     </p>
                 </div>
@@ -44,7 +53,7 @@ export const Skills = () => {
                 {/* cards start */}
                 {/* Dev */}
                 {
-                    showDev ? <DevCards data-aos='fade-dowm' />
+                    showDev ? <DevCards />
                         : null
                 }
 
