@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router';
+
 export const ProjectItem = ({ title, backgroundImg, projectURL }) => {
+    const r = useRouter();
     backgroundImg = "/fashoid.svg",
         projectURL = "/vercel",
         title = "Projects"
