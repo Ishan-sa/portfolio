@@ -47,7 +47,7 @@ export const Navbar = () => {
                             Resume
                         </li>
                         <ContactBtn>
-                            Let's talk
+                            Let&apos;s talk
                         </ContactBtn>
                     </ul>
                     <div onClick={handleNav} className="pr-1 md:hidden cursor-pointer">
@@ -70,7 +70,7 @@ export const Navbar = () => {
                             </div>
                         </div>
                         <div className="border-b border-[#717B99] my-4">
-                            <p className="pb-1 w-[85%] md:w-[90%] py-4">Let's build something legendary together</p>
+                            <p className="pb-1 w-[85%] md:w-[90%] py-4">Let&apos;s build something legendary together</p>
                         </div>
                         <div>
                             <div className="py-4 flex flex-col">
@@ -91,12 +91,12 @@ export const Navbar = () => {
                                         Resume
                                     </li>
                                     <ContactBtn>
-                                        Let's talk
+                                        Let&apos;s talk
                                     </ContactBtn>
                                 </ul>
                                 <div className="pt-40">
                                     <p className="uppercase tracking-widest text-[#68A4FF]">
-                                        Let's connect
+                                        Let&apos;s connect
                                     </p>
                                     <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                         <div className="rounded-full mt-3 shadow-lg shadow-[#717B99] p-3 cursor-pointer hover:scale-105 ease-in duration-300">

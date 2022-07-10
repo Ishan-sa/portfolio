@@ -15,10 +15,10 @@ export const First = () => {
             <div className="max-w-[1300px] w-full h-full mx-auto p-2 flex justify-center items-center">
                 <div>
                     <p data-aos='fade-up' className="uppercase text-sm tracking-widest text-active leading-10 font-Inter">
-                        Let's build something together
+                        Let&apos;s build something together
                     </p>
                     <h1 data-aos='fade-down' className="py-2 font-Inter font-semibold">
-                        Hi, I'm <span className="text-mainblue">Ishan.</span>
+                        Hi, I&apos;m <span className="text-mainblue">Ishan.</span>
                     </h1>
                     <div className="flex items-center">
                         <img src="/imac.svg" alt="" />

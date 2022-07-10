@@ -22,7 +22,7 @@ export const Contact = () => {
                 </p>
                 <div className="py-4 pb-6">
                     <p className='font-Inter border-b-[3px] inline border-mainblue uppercase text-active'>
-                        Let's discuss about our next project together!
+                        Let&apos;s discuss about our next project together!
                     </p>
                 </div>
 
