@@ -26,8 +26,8 @@ export const Contact = () => {
                     </p>
                 </div>
 
-                <div className='flex flex-row align-center font-Inter justify-between'>
-                    <div>
+                <div className='contactCont flex flex-row align-center font-Inter justify-between'>
+                    <div className='formCont'>
                         <form action="submit" className='flex flex-col' id='contactForm'>
                             {/* <div className='flex flex-col'> */}
                             <label htmlFor='name' className='pb-1 tracking-wider'>Name</label>
@@ -40,9 +40,9 @@ export const Contact = () => {
                             <label htmlFor='name' className='pb-1 tracking-wider'>Message</label>
                             <textarea rows={5} cols={20} type="text" placeholder='Your message' name='name' className='rounded-[5px] py-2 px-4 bg-notactive text-mainwhite mb-4 placeholder-active' required />
                         </form>
-                        <ContactBtn className='mt-4' formAction='submit' form='contactForm'>Submit</ContactBtn>
+                        <ContactBtn className='mt-4 submitBtn' formAction='submit' form='contactForm'>Submit</ContactBtn>
                     </div>
-                    <div>
+                    <div className='rightCont'>
                         <img src='/pp.jpg' width={310} height={395} className='pp rounded-[10px]' />
                         <p className='text-mainwhite text-center pt-7 text-2xl'>Ishan Sachdeva</p>
                         <p className='text-active uppercase tracking-widest text-center'>Front end developer</p>

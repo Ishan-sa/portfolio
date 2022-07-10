@@ -1,6 +1,7 @@
-import React from 'react'
-
 export const ProjectItem = ({ title, backgroundImg, projectURL }) => {
+    backgroundImg = "/fashoid.svg",
+        projectURL = "/vercel",
+        title = "Projects"
     return (
         <div className="prCont relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group">
             <img className="fashoid rounded-xl group-hover:opacity-10" src={backgroundImg} alt="" />

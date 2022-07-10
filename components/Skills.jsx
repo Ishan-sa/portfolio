@@ -45,7 +45,7 @@ export const Skills = () => {
                     <p className='text-mainwhite'>/</p>
                     <p
                         ref={colorRefGraphic}
-                        onClick={() => [setshowGraphic(!false), setshowDev(false), changeGraphicColor()]}
+                        onClick={() => [setshowGraphic(true), setshowDev(false), changeGraphicColor()]}
                         className='text-notactive graphic cursor-pointer transition duration-900'>
                         Graphic and UI/UX
                     </p>

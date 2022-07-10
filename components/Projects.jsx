@@ -13,31 +13,31 @@ export const Projects = () => {
                 </p>
                 <div className="py-4 pb-6">
                     <h2 className='font-Inter border-b-[3px] inline border-mainblue'>
-                        What I can do
+                        What I&apos;ve done so far
                     </h2>
                 </div>
-                {/* <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8">
                     <ProjectItem
                         title='Fashoid'
-                        backroundImg={fashoidImg}
+                        backroundImg='/fashoid.svg'
                         projectURL='/fashoid'
                     />
                     <ProjectItem
                         title='Fashoid'
-                        backroundImg={fashoidImg}
+                        backroundImg=''
                         projectURL='/fashoid'
                     />
                     <ProjectItem
                         title='Fashoid'
-                        backroundImg={fashoidImg}
+                        backroundImg=''
                         projectURL='/fashoid'
                     />
                     <ProjectItem
                         title='Fashoid'
-                        backroundImg={fashoidImg}
+                        backroundImg=''
                         projectURL='/fashoid'
                     />
-                </div> */}
+                </div>
             </div>
         </div>
     )
